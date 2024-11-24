@@ -46,7 +46,7 @@ while game_on:
         magic_food.hideturtle()
         snake.extend()
         score.increase_score()
-        helper += 1
+        helper += 2
 
     if abs(snake.head.xcor()) > 370 or abs(snake.head.ycor()) > 370:
         game_on = False
