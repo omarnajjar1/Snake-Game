@@ -16,11 +16,11 @@ class Snake:
             self.turtles.append(new_turtle)
         
     def extend(self):
-        new_turtles = Turtle("square")
-        new_turtles.color("white")
-        new_turtles.penup()
-        new_turtles.goto(self.turtles[0].pos())
-        self.turtles.insert(0, new_turtles)
+        new_segment = Turtle("square")
+        new_segment.color("white")
+        new_segment.penup()
+        new_segment.goto(self.turtles[0].pos())
+        self.turtles.insert(0, new_segment)
 
     def move(self):
         for i in range(len(self.turtles) -1):
